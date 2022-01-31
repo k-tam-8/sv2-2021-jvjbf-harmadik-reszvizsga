@@ -4,7 +4,7 @@ import java.time.LocalTime;
 import java.util.Comparator;
 import java.util.Objects;
 
-public class Movie implements Comparator<Movie>{
+public class Movie {
 
     private String title;
     private LocalTime startTime;
@@ -35,8 +35,5 @@ public class Movie implements Comparator<Movie>{
         return Objects.hash(title);
     }
 
-    @Override
-    public int compare(Movie o1, Movie o2) {
-      return o1.startTime.compareTo(o2.startTime);
-    }
+
 }
